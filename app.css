@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: monospace;
+}
+
+.cards {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.card {
+	flex-basis: calc(1/3 * 100%);
+	text-align: center;
+	border: 1px solid pink;
+	border-radius: 70px;
+	max-width: 10rem;
+	background-color: rgb(248, 210, 216);
+}
+
+.card img {
+	width: 100%;
+	max-width: 7rem;
+	border-radius: 100%;
+}
+
+.toggle-buttons {
+	display: flex;
+}
+
+.toggle-buttons button {
+	background-color: #ffedd8;
+	border: 1px solid #8b5e34;
+	border-radius: 0;
+	color: #8b5e34;
+}
+
+.toggle-buttons button.selected {
+	background-color: #8b5e34;
+	color: #ffedd8;
+}
+
+@media screen and (max-width: 768px) {
+	.card {
+		flex-basis: 100%;
+	}
+
+	.cards {
+		flex-wrap: wrap;
+	}
+}
+
+.users-table {
+	margin: 0 auto;
+	margin-top: 2rem;
+}
+
+.users-table,
+td {
+	border: 2px solid #0096c7;
+	background-color: #90e0ef;
+}
+
+.users-table th {
+	background-color: #0077b6;
+	color: white;
+}
+
+.secret-content-container {
+	flex-direction: column;
+	align-items: center;
+	display: none;
+}
+
+.btn {
+	text-transform: uppercase;
+	border: none;
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	padding: 0.5em;
+	font-size: 1rem;
+}
+
+h1 {
+	text-align: center;
+}
+
+.login-form {
+	max-width: 20rem;
+	margin: 0 auto;
+}
+
+.login-form svg {
+	width: 4rem;
+	height: 4rem;
+	margin: 0 auto;
+	display: block;
+	color: #94d2bd;
+}
+
+.login-form label {
+	display: block;
+	font-weight: bold;
+}
+
+.login-form input {
+	display: block;
+	padding: 0.5em;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.login-form button[type=submit] {
+	background-color: #52b788;
+	display: block;
+	width: 100%;
+	border: none;
+	color: white;
+	padding: 1em;
+}
+
+.top-secret {
+	margin-bottom: 1rem;
+	width: 200px;
+}
+
+.logout-btn {
+	background-color: orange;
+}
+
+.admin-link {
+	background-color: #222;
+	display: none;
+}
+
+.back-btn {
+	background-color: gray;
+}
