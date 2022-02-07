@@ -27,7 +27,7 @@ function showCards() {
 					<h2>
 					${user.username}
 					</h2>		
-					<img src="/images/${user.img}">
+					<img src="./images/${user.img}">
 				</div>
 				`
 	);
